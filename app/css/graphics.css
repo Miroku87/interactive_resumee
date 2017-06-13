@@ -1,0 +1,90 @@
+.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#009FD7;}
+.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#00ADEE;}
+.st2{fill:#DBDBDB;}
+.st3{fill:#333333;}
+.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#CCCCCC;}
+.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+.st6{fill-rule:evenodd;clip-rule:evenodd;}
+.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#FCFFF8;}
+.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#E3E5E1;}
+.st9{fill:#D1D3CF;}
+.st10{fill-rule:evenodd;clip-rule:evenodd;fill:#DBDBDB;}
+.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#E6D5C2;}
+.st12{fill-rule:evenodd;clip-rule:evenodd;fill:#EBEDE8;}
+.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#003384;}
+.st14{fill-rule:evenodd;clip-rule:evenodd;fill:#187BFF;}
+.st15{fill:#A9998D;}
+.st16{fill-rule:evenodd;clip-rule:evenodd;fill:#AFF8FF;}
+.st17{fill:#B0CEFF;}
+.st18{fill-rule:evenodd;clip-rule:evenodd;fill:#21B9EC;}
+.st19{fill-rule:evenodd;clip-rule:evenodd;fill:#44C7F4;}
+.st20{fill-rule:evenodd;clip-rule:evenodd;fill:#D80000;}
+.st21{fill:#D80000;}
+
+
+.st0, .st1, .st18, .st19 {
+	/*display: none;*/
+}
+
+.st0 {
+	animation: waving 6s 0s infinite cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.st1 {
+	animation: waving 8s 2s infinite cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.st18 {
+	animation: waving 10s -1s infinite cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.st19 {
+	animation: waving 4s 1s infinite cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.boat-surfs {
+	transform-origin: center 650px;
+}
+
+.interaction-points {
+	transform-origin: center 631px;
+}
+
+.boat-surfs,
+.interaction-points {
+	animation: surfing 4s 0s infinite ease both;
+}
+
+@keyframes waving {
+	0% {
+		transform: translate(0,0);
+	}
+	25% {
+		transform: translate(50px,-40px);
+	}
+	50% {
+		transform: translate(100px,-20px);
+	}
+	75% {
+		transform: translate(50px,0px);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+@keyframes surfing {
+	0% {
+		transform: translateY(0) rotate(0);
+	}
+	25% {
+		transform: translateY(-20px) rotate(-5deg);
+	}
+	50% {
+		transform: translateY(20px) rotate(5deg);
+	}
+	75% {
+		transform: translateY(-20px) rotate(-10deg);
+	}
+	100% {
+		transform: translateY(0) rotate(0);
+	}
+}
