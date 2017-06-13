@@ -1,0 +1,1 @@
+if(typeof HTMLCollection.prototype.forEach === 'undefined'){HTMLCollection.prototype.forEach = Array.prototype.forEach;}

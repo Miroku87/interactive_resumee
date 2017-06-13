@@ -1,5 +1,5 @@
 var
-	HOST_NAME       = '0.0.0.0',
+	HOST_NAME       = 'localhost',
 	SERVER_PORT     = 9000,
 	LIVERELOAD_PORT = 35729;
   
@@ -28,10 +28,21 @@ module.exports = function (grunt)
 				}
 			}
 		},
+		stylus: {
+			compile: {
+				options: {
+					compress: false
+				},
+				files: {
+					'./dist/css/index.css'    : './app/css/index.styl',
+					'./dist/css/graphics.css' : './app/css/graphics.styl'
+				}
+			}
+		},
 		copy: {
 			dev: {
 				files : [
-					{ cwd: './app', src : [ '**', '!assets/_sources' ], expand : true, dest : './dist/', nonull: true }
+					{ cwd: './app', src : [ '**', '!css/**' , '!assets/_sources/**' ], expand : true, dest : './dist/', nonull: true }
 				]
 			}
 		},
@@ -41,15 +52,19 @@ module.exports = function (grunt)
 			}
 		},
 		watch: {
+			options: {
+				livereload: {
+					host: HOST_NAME
+				},
+				nospawn: false
+			},
 			dev: {
-				files : [ './app/**/**' ],
-				tasks: [],
-				options: {
-					livereload: {
-						host: HOST_NAME
-					},
-					nospawn: false
-				}
+				files : [ './app/**/**','!./app/**/**.styl' ],
+				tasks: []
+			},
+			stylus: {
+				files : [ './app/**/**.styl' ],
+				tasks: ['stylus']
 			}
 		}
 	});
@@ -65,5 +80,5 @@ module.exports = function (grunt)
 		}
 	});
 	
-	grunt.registerTask( 'default', [ 'clean:dev', 'copy:dev', 'connect:dev', 'watch:dev' ] );
+	grunt.registerTask( 'default', [ 'clean:dev', 'copy:dev', 'stylus', 'connect:dev', 'watch' ] );
 };
