@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../../css/graphics.css"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2000 775" style="enable-background:new 0 0 2000 775;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#009FD7;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#00ADEE;}
-	.st2{fill:#DBDBDB;}
-	.st3{fill:#333333;}
-	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#CCCCCC;}
-	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;}
-	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#FCFFF8;}
-	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#E3E5E1;}
-	.st9{fill:#D1D3CF;}
-	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:#DBDBDB;}
-	.st11{fill-rule:evenodd;clip-rule:evenodd;fill:#E6D5C2;}
-	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:#EBEDE8;}
-	.st13{fill-rule:evenodd;clip-rule:evenodd;fill:#003384;}
-	.st14{fill-rule:evenodd;clip-rule:evenodd;fill:#187BFF;}
-	.st15{fill:#A9998D;}
-	.st16{fill-rule:evenodd;clip-rule:evenodd;fill:#AFF8FF;}
-	.st17{fill:#B0CEFF;}
-	.st18{fill-rule:evenodd;clip-rule:evenodd;fill:#21B9EC;}
-	.st19{fill-rule:evenodd;clip-rule:evenodd;fill:#44C7F4;}
-	.st20{fill-rule:evenodd;clip-rule:evenodd;fill:#D80000;}
-	.st21{fill:#D80000;}
-</style>
+	 viewBox="0 0 2000 775" style="enable-background:new 0 0 2000 775;" xml:space="preserve" >
 <g id="sea-behind">
 	<path class="st0" d="M2011.4,611.9c-35.4,26.4-85.4-25-130.4-5.3c-14.7,6.4-69.4,37.3-92,26.5c-133.7-63.6-123.3,21-189.6-13.2
 		c-90.5-46.6-98.9,49.4-218.7-6.8c-47.8-22.4-97.6,14.4-145.5,15.9c-71.3,2.3-87.1-50.2-137.4-21.6c-18.5,10.5-74.8,16.5-97.8-1
@@ -39,7 +16,7 @@
 		h2270V606.4C2095.4,573.8,2027.6,671.1,1946.3,638.3z"/>
 </g>
 <g id="boat-evel">
-	<g id="boat">
+	<g id="boat" class="boat-surfs">
 		<g id="mast">
 			<path class="st2" d="M1037.7,589.6h-12.5l1.1-576.1l-11.9-1.2l0.1-2l11.8-0.1c4.3,0,4.1,0,8.4,0l3.3,579.4H1037.7L1037.7,589.6z"
 				/>
@@ -244,7 +221,7 @@
 		c-66.3,30.4-71.7-26.6-189.6,11.7c-23.6,7.7-79.1-6.2-93.8-11.9c-45-17.5-84.2,28.5-128.6,14.9c-82.5-25.2-109.1-4-123.6,3.6v125.3
 		h1135h1135V667.4C2129.3,668.9,2123.9,671.1,2119.7,673.6z"/>
 </g>
-<g id="interaction-points">
+<g id="interaction-points" class="interaction-points">
 	<g id="spinnaker-interaction-point">
 		<circle class="st20" cx="1229.5" cy="214.5" r="6"/>
 		<g>

@@ -15,8 +15,8 @@ module.exports = function (grunt)
 				options: {
 					hostname: HOST_NAME,
 					port: SERVER_PORT,
-					open: true,
 					livereload: LIVERELOAD_PORT,
+					open: true,
 					//keepalive: true,
 					base: {
 						path: './dist',
