@@ -11,11 +11,12 @@ var ResumeeManager = ( function( __win, __doc )
 		
 		var line_id = spot.id.replace( "spot", "line" ),
 			line    = _svg.getElementById( line_id ),
+			scale   = _svg_container.getBoundingClientRect().width / 2000,
 			new_x2  = spot.getBoundingClientRect().left + spot.getBoundingClientRect().width / 2,
 			new_y2  = spot.getBoundingClientRect().top + spot.getBoundingClientRect().height / 2;
 		
-		line.setAttribute( "x2", new_x2 );
-		line.setAttribute( "y2", new_y2 );
+		line.setAttribute( "x2", new_x2 / scale );
+		line.setAttribute( "y2", new_y2 / scale );
 	}
 	
 	function _setAnimationChecker( )
@@ -32,8 +33,6 @@ var ResumeeManager = ( function( __win, __doc )
 	{
 		_svg = _svg_container.contentDocument;
 		_setAnimationChecker.call( this );
-		_svg.getElementById( "trail-line" ).setAttribute("x2", 1000);
-		console.log(_svg.getElementById( "trail-line" ));
 	}
 	
 	this.init = function( )
