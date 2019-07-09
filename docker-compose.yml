@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  sailresume:
+    build: "."
+    command: sh -c "npm install && npm run watch"
+    ports:
+      - 9000:9000
+    volumes:
+      - ./app:/app

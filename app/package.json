@@ -1,0 +1,33 @@
+{
+  "name": "sailing_resumee",
+  "version": "1.0.0",
+  "description": "Go Windward",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config /app/webpack.config.js --mode development --progress --color --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miroku87/interactive_resumee.git"
+  },
+  "author": "Andrea Silvestri",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Miroku87/interactive_resumee/issues"
+  },
+  "homepage": "https://github.com/Miroku87/interactive_resumee#readme",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "@babel/core": "latest",
+    "babel-loader": "latest",
+    "@babel/preset-env": "latest",
+    "css-loader": "latest",
+    "style-loader": "latest",
+    "stylus": "latest",
+    "stylus-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
